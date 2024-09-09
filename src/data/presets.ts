@@ -1,19 +1,21 @@
 import LabelPreset from '@/types/LabelPreset'
 
 const presets: { [key: string]: LabelPreset | 'spacer' } = {
-    /* Blank/Starter preset */
-    'Default': {
-        text: {
-            brand: '',
-            type: '',
-            diameter: '',
-            temp: ''
-        },
-        graphics: {
-            logo: 'Bambu Lab'
-        }
-    },
-
+    // /* Blank/Starter preset */
+    // 'Default': {
+    //     text: {
+    //         brand: '',
+    //         type: '',
+    //         diameter: '',
+    //         length: '',
+    //         temp: '',
+    //         weight: ''
+    //     },
+    //     graphics: {
+    //         logo: 'Bambu Lab'
+    //     }
+    // },
+    
     /* Bambu Lab */
     '': 'spacer',
     '⸻ Bambu Lab ⸻': 'spacer',
@@ -23,7 +25,15 @@ const presets: { [key: string]: LabelPreset | 'spacer' } = {
             brand: 'Bambu',
             type: 'PLA Basic',
             diameter: '1.75 ± 0.03 mm',
-            temp: '190-220'
+            length: 'NA',
+            temp: '190 - 230',
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '100', 
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
         },
         graphics: {
             logo: 'Bambu Lab'
@@ -34,94 +44,132 @@ const presets: { [key: string]: LabelPreset | 'spacer' } = {
             brand: 'Bambu',
             type: 'PLA Silk',
             diameter: '1.75 ± 0.03 mm',
-            temp: '210-230'
+            length: 'NA',
+            temp: '210 - 230',
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '100', 
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
         },
         graphics: {
             logo: 'Bambu Lab'
         }
     },
-    'Bambu PETG Basic': {
+    'Bambu PETG HF': {
         text: {
             brand: 'Bambu',
-            type: 'PETG Basic',
+            type: 'PETG HF',
             diameter: '1.75 ± 0.03 mm',
-            temp: '230-260'
+            length: '325 m',
+            temp: '230 - 260',
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '100', 
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
         },
         graphics: {
             logo: 'Bambu Lab'
         }
     },
-
-
-    /* SUNLU */
-    ' ': 'spacer',
-    '⸻ SUNLU ⸻': 'spacer',
-
-    'SUNLU PLA Matte': {
+    'Bambu PETG Translucent': {
         text: {
-            brand: 'SUNLU',
-            type: 'PLA Matte',
-            diameter: '1.75 ± 0.02 mm',
-            temp: '190-220'
-        },
-        graphics: {
-            logo: 'SUNLU'
-        }
-    },
-    'SUNLU PETG': {
-        text: {
-            brand: 'SUNLU',
-            type: 'PETG',
-            diameter: '1.75 ± 0.02 mm',
-            temp: '220-250'
-        },
-        graphics: {
-            logo: 'SUNLU'
-        }
-    },
-
-    /* JAYO */
-    '  ': 'spacer',
-    '⸻ JAYO ⸻': 'spacer',
-
-    'JAYO PLA+': {
-        text: {
-            brand: 'JAYO',
-            type: 'PLA+',
-            diameter: '1.75 ± 0.02 mm',
-            temp: '210-235'
-        },
-        graphics: {
-            logo: 'JAYO'
-        }
-    },
-
-    /* Eryone */
-    '   ': 'spacer',
-    '⸻ Eryone ⸻': 'spacer',
-
-    'Eryone PLA Silk': {
-        text: {
-            brand: 'Eryone',
-            type: 'PLA Silk',
+            brand: 'Bambu',
+            type: 'PETG Translucent',
             diameter: '1.75 ± 0.03 mm',
-            temp: '190-220'
+            length: '330 m',
+            temp: '230 - 260',
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '70', 
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
         },
         graphics: {
-            logo: 'Eryone'
+            logo: 'Bambu Lab'
         }
     },
-    'Eryone TPU 95A': {
+    
+    /* Polymaker */
+    '': 'spacer',
+    '⸻ Polymaker ⸻': 'spacer',
+    
+    'Polymaker PLA Matte': {
         text: {
-            brand: 'Eryone',
-            type: 'TPU 95A',
-            diameter: '1.75 ± 0.05 mm',
-            temp: '190-220'
+            brand: 'Polymaker',
+            type: 'PLA Matte',
+            diameter: '1.75 ± 0.03 mm',
+            length: 'NA',
+            temp: '190 - 230', 
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '100', 
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
         },
         graphics: {
-            logo: 'Eryone'
+            logo: 'Polymaker'
+        }
+    },
+    
+    /* Overture */
+    '': 'spacer',
+    '⸻ Overture ⸻': 'spacer',
+    
+    'Overture PLA Basic': {
+        text: {
+            brand: 'Overture',
+            type: 'PLA Basic',
+            diameter: '1.75 ± 0.03 mm',
+            length: 'NA',
+            temp: '190 - 230', 
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '100', 
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
+        },
+        graphics: {
+            logo: 'Overture'
+        }
+    },
+    
+    /* Elegoo */
+    '': 'spacer', 
+    '⸻ Elegoo ⸻': 'spacer',
+    
+    'Elegoo PLA Basic': {
+        text: {
+            brand: 'Elegoo', 
+            type: 'PLA Basic', 
+            diameter: '1.75 ± 0.02 mm',
+            length: 'NA', 
+            temp: '190 - 230', 
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '100', 
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
+        },
+        graphics: {
+            logo: 'Elegoo'
         }
     }
+    
+    
 }
 
 export default presets
