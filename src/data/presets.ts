@@ -131,7 +131,7 @@ const presets: { [key: string]: LabelPreset | 'spacer' } = {
             type: 'PLA Basic',
             diameter: '1.75 ± 0.03 mm',
             length: 'NA',
-            temp: '190 - 230', 
+            temp: '190 - 220', 
             weight: '1 kg'
         },
         sizing: {
@@ -144,6 +144,45 @@ const presets: { [key: string]: LabelPreset | 'spacer' } = {
             logo: 'Overture'
         }
     },
+    'Overture PLA Matte': {
+        text: {
+            brand: 'Overture',
+            type: 'PLA Matte',
+            diameter: '1.75 ± 0.03 mm',
+            length: 'NA',
+            temp: '190 - 220', 
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '100', 
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
+        },
+        graphics: {
+            logo: 'Overture'
+        }
+    },
+    'Overture PETG Basic': {
+        text: {
+            brand: 'Overture',
+            type: 'PETG Basic',
+            diameter: '1.75 ± 0.02 mm',
+            length: 'NA',
+            temp: '230 - 250', 
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '100', 
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
+        },
+        graphics: {
+            logo: 'Overture'
+        }
+    },
+    
     
     /* Elegoo */
     '': 'spacer', 
