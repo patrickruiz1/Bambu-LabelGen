@@ -98,7 +98,7 @@ const presets: { [key: string]: LabelPreset | 'spacer' } = {
     },
     
     /* Polymaker */
-    '': 'spacer',
+    ' ': 'spacer',
     '⸻ Polymaker ⸻': 'spacer',
     
     'Polymaker PLA Matte': {
@@ -122,7 +122,7 @@ const presets: { [key: string]: LabelPreset | 'spacer' } = {
     },
     
     /* Overture */
-    '': 'spacer',
+    '  ': 'spacer',
     '⸻ Overture ⸻': 'spacer',
     
     'Overture PLA Basic': {
@@ -163,6 +163,25 @@ const presets: { [key: string]: LabelPreset | 'spacer' } = {
             logo: 'Overture'
         }
     },
+    'Overture PLA Easy': {
+        text: {
+            brand: 'Overture',
+            type: 'PLA Easy',
+            diameter: '1.75 ± 0.02 mm',
+            length: '330 m',
+            temp: '190 - 220', 
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '100', 
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
+        },
+        graphics: {
+            logo: 'Overture'
+        }
+    },
     'Overture PETG Basic': {
         text: {
             brand: 'Overture',
@@ -183,9 +202,8 @@ const presets: { [key: string]: LabelPreset | 'spacer' } = {
         }
     },
     
-    
     /* Elegoo */
-    '': 'spacer', 
+    '   ': 'spacer', 
     '⸻ Elegoo ⸻': 'spacer',
     
     'Elegoo PLA Basic': {
@@ -207,8 +225,6 @@ const presets: { [key: string]: LabelPreset | 'spacer' } = {
             logo: 'Elegoo'
         }
     }
-    
-    
 }
 
 export default presets
