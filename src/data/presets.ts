@@ -39,6 +39,25 @@ const presets: { [key: string]: LabelPreset | 'spacer' } = {
             logo: 'Bambu Lab'
         }
     },
+    'Bambu PLA Matte': {
+        text: {
+            brand: 'Bambu',
+            type: 'PLA Matte',
+            diameter: '1.75 ± 0.03 mm',
+            length: '315 m',
+            temp: '190 - 230',
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '100', 
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
+        },
+        graphics: {
+            logo: 'Bambu Lab'
+        }
+    },
     'Bambu PLA Silk': {
         text: {
             brand: 'Bambu',
