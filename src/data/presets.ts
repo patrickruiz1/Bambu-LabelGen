@@ -243,6 +243,25 @@ const presets: { [key: string]: LabelPreset | 'spacer' } = {
         graphics: {
             logo: 'Elegoo'
         }
+    },
+    'Elegoo PLA Silk': {
+        text: {
+            brand: 'Elegoo',
+            type: 'PLA Silk',
+            diameter: '1.75 ± 0.02 mm',
+            length: 'NA',
+            temp: '215 - 230',
+            weight: '1 kg'
+        },
+        sizing: {
+            brand_font_percent: '100',
+            type_font_percent: '100',
+            fil_info_font_percent: '100',
+            fil_colour_name_font_percent: '100'
+        },
+        graphics: {
+            logo: 'Elegoo'
+        }
     }
 }
 
